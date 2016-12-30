@@ -1,0 +1,25 @@
+{
+    "rebuApp": {
+        "blog" : {
+            "home": {
+                "title": "Blogs",
+                "createLabel": "Crează o nouă Blog",
+                "createOrEditLabel": "Crează sau editează o Blog",
+                "search": "Search for Blog"
+            },
+            "created": "O nouă Blog este creată cu identificatorul {{ param }}",
+            "updated": "O Blog este editată cu identificatorul {{ param }}",
+            "deleted": "O Blog este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Blog {{ id }}?"
+            },
+            "detail": {
+                "title": "Blog"
+            },
+            "name": "Name",
+            "handle": "Handle",
+            "name": "Name",
+            "user": "User"
+        }
+    }
+}

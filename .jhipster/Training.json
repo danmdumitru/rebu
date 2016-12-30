@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "name",
+            "otherEntityName": "exercise",
+            "otherEntityRelationshipName": "training"
+        },
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20161127220349",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "training",
+    "pagination": "pagination"
+}

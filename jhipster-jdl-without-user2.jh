@@ -1,0 +1,59 @@
+
+
+// an ignored comment
+/** not an ignored comment */
+entity Blog {
+	name String,
+	handle String
+}
+
+
+entity Tag {
+	name String
+}
+
+entity Entry {
+	title String,
+    content Blob,
+    date ZonedDateTime	
+}
+
+entity Training {
+	name String
+}
+
+entity Exercise {
+	name String,
+    rep Integer,
+    sets Integer,
+    description String
+}
+
+entity Result {
+	description String,
+    rep Integer,
+    sets Integer,
+    dueDate ZonedDateTime 
+}
+
+
+
+relationship OneToMany {
+	Training{name} to Exercise
+}
+
+relationship ManyToMany {
+	Exercise{name} to Result
+}
+
+relationship OneToMany {
+	Blog{name} to Entry
+}
+
+relationship ManyToMany {
+	Entry{title} to Tag{name}
+}
+
+paginate Entry, Blog, Result, Exercise with infinite-scroll
+paginate Tag, Training with pagination
+service all with serviceImpl

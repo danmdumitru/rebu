@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rep",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "sets",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dueDate",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20161127220351",
+    "entityTableName": "result",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl"
+}

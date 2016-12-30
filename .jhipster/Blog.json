@@ -1,0 +1,34 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "name",
+            "otherEntityName": "entry",
+            "otherEntityRelationshipName": "blog"
+        },
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "handle",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20161127220346",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "blog",
+    "pagination": "infinite-scroll",
+    "javadoc": "not an ignored comment"
+}

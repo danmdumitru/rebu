@@ -1,0 +1,24 @@
+{
+    "rebuApp": {
+        "training" : {
+            "home": {
+                "title": "Trainings",
+                "createLabel": "Créer un nouveau Training",
+                "createOrEditLabel": "Créer ou éditer un Training",
+                "search": "Recherche pour Training"
+            },
+            "created": "Un nouveau Training a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Training avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Training avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Training {{ id }} ?"
+            },
+            "detail": {
+                "title": "Training"
+            },
+            "name": "Name",
+            "name": "Name",
+            "user": "User"
+        }
+    }
+}

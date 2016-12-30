@@ -1,0 +1,27 @@
+{
+    "rebuApp": {
+        "exercise" : {
+            "home": {
+                "title": "Exercises",
+                "createLabel": "Crează o nouă Exercise",
+                "createOrEditLabel": "Crează sau editează o Exercise",
+                "search": "Search for Exercise"
+            },
+            "created": "O nouă Exercise este creată cu identificatorul {{ param }}",
+            "updated": "O Exercise este editată cu identificatorul {{ param }}",
+            "deleted": "O Exercise este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Exercise {{ id }}?"
+            },
+            "detail": {
+                "title": "Exercise"
+            },
+            "name": "Name",
+            "rep": "Rep",
+            "sets": "Sets",
+            "description": "Description",
+            "training": "Training",
+            "name": "Name"
+        }
+    }
+}

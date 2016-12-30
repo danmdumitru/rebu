@@ -1,0 +1,24 @@
+{
+    "rebuApp": {
+        "training" : {
+            "home": {
+                "title": "Trainings",
+                "createLabel": "Crează o nouă Training",
+                "createOrEditLabel": "Crează sau editează o Training",
+                "search": "Search for Training"
+            },
+            "created": "O nouă Training este creată cu identificatorul {{ param }}",
+            "updated": "O Training este editată cu identificatorul {{ param }}",
+            "deleted": "O Training este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Training {{ id }}?"
+            },
+            "detail": {
+                "title": "Training"
+            },
+            "name": "Name",
+            "name": "Name",
+            "user": "User"
+        }
+    }
+}

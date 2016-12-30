@@ -1,0 +1,24 @@
+{
+    "rebuApp": {
+        "training" : {
+            "home": {
+                "title": "Trainings",
+                "createLabel": "Create a new Training",
+                "createOrEditLabel": "Create or edit a Training",
+                "search": "Search for Training"
+            },
+            "created": "A new Training is created with identifier {{ param }}",
+            "updated": "A Training is updated with identifier {{ param }}",
+            "deleted": "A Training is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Training {{ id }}?"
+            },
+            "detail": {
+                "title": "Training"
+            },
+            "name": "Name",
+            "name": "Name",
+            "user": "User"
+        }
+    }
+}

@@ -1,0 +1,66 @@
+<div>
+    <h2 data-translate="rebuApp.exercise.home.title">Exercises</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="exercise.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="rebuApp.exercise.home.createLabel">
+                        Create new Exercise
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.reset()">
+                    <th jh-sort-by="id"><span data-translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="name"><span data-translate="rebuApp.exercise.name">Name</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="rep"><span data-translate="rebuApp.exercise.rep">Rep</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="sets"><span data-translate="rebuApp.exercise.sets">Sets</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="description"><span data-translate="rebuApp.exercise.description">Description</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="training.id"><span data-translate="rebuApp.exercise.training">Training</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody infinite-scroll="vm.loadPage(vm.page + 1)" infinite-scroll-disabled="vm.page >= vm.links['last']">
+                <tr ng-repeat="exercise in vm.exercises track by exercise.id">
+                    <td><a ui-sref="exercise-detail({id:exercise.id})">{{exercise.id}}</a></td>
+                    <td>{{exercise.name}}</td>
+                    <td>{{exercise.rep}}</td>
+                    <td>{{exercise.sets}}</td>
+                    <td>{{exercise.description}}</td>
+                    <td>
+                        <a ui-sref="training-detail({id:exercise.training.id})">{{exercise.training.id}}</a>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="exercise-detail({id:exercise.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="exercise.edit({id:exercise.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="exercise.delete({id:exercise.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

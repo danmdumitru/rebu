@@ -1,0 +1,23 @@
+{
+    "rebuApp": {
+        "tag" : {
+            "home": {
+                "title": "Tags",
+                "createLabel": "Crează o nouă Tag",
+                "createOrEditLabel": "Crează sau editează o Tag",
+                "search": "Search for Tag"
+            },
+            "created": "O nouă Tag este creată cu identificatorul {{ param }}",
+            "updated": "O Tag este editată cu identificatorul {{ param }}",
+            "deleted": "O Tag este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Tag {{ id }}?"
+            },
+            "detail": {
+                "title": "Tag"
+            },
+            "name": "Name",
+            "name": "Name"
+        }
+    }
+}
