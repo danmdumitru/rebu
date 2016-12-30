@@ -10,6 +10,12 @@
                 "bankAccount": "ContBancar",
                 "label": "Etichetă",
                 "operation": "Operație",
+                "blog": "Blog",
+                "tag": "Tag",
+                "entry": "Entry",
+                "training": "Training",
+                "exercise": "Exercise",
+                "result": "Result",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

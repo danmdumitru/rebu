@@ -7,6 +7,12 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
+                "blog": "Blog",
+                "tag": "Tag",
+                "entry": "Entry",
+                "training": "Training",
+                "exercise": "Exercise",
+                "result": "Result",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
@@ -119,5 +125,5 @@
         "emailexists": "E-mail is already in use!",
         "idexists": "A new {{ entityName }} cannot already have an ID"
     },
-    "footer": "Copyright © Rebu 2016"
+    "footer": "Copyright ï¿½ Rebu 2016"
 }
