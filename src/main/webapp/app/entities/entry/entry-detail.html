@@ -19,14 +19,14 @@
         <dd>
             <span>{{vm.entry.date | date:'medium'}}</span>
         </dd>
-        <dt><span data-translate="rebuApp.entry.blog">Blog</span></dt>
+        <dt><span data-translate="rebuApp.entry.blog">Blog1</span></dt>
         <dd>
-            <a ui-sref="blog-detail({id:vm.entry.blog.id})">{{vm.entry.blog.id}}</a>
+            <a ui-sref="blog-detail({name:vm.entry.blog.name})">{{vm.entry.blog.name}}</a>
         </dd>
         <dt><span data-translate="rebuApp.entry.title">Title</span></dt>
         <dd>
             <span ng-repeat="title in vm.entry.titles">
-                <a ui-sref="tag-detail({id: title.id})">{{title.id}}</a>{{$last ? '' : ', '}}
+                <a ui-sref="tag-detail({id: title.id})">{{title.name}}</a>{{$last ? '' : ', '}}
             </span>
         </dd>
     </dl>
