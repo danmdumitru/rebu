@@ -3,7 +3,7 @@
         "tag" : {
             "home": {
                 "title": "Tags",
-                "createLabel": "Crează o nouă Tag",
+                "createLabel": "Crează un nouă Tag",
                 "createOrEditLabel": "Crează sau editează o Tag",
                 "search": "Search for Tag"
             },
@@ -16,8 +16,8 @@
             "detail": {
                 "title": "Tag"
             },
-            "name": "Name",
-            "name": "Name"
+            "name": "Nume",
+            "name": "Nume"
         }
     }
 }

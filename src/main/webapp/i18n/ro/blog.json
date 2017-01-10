@@ -2,8 +2,8 @@
     "rebuApp": {
         "blog" : {
             "home": {
-                "title": "Blogs",
-                "createLabel": "Crează o nouă Blog",
+                "title": "Blog",
+                "createLabel": "Crează un nou Blog",
                 "createOrEditLabel": "Crează sau editează o Blog",
                 "search": "Search for Blog"
             },
@@ -16,10 +16,10 @@
             "detail": {
                 "title": "Blog"
             },
-            "name": "Name",
-            "handle": "Handle",
-            "name": "Name",
-            "user": "User"
+            "name": "Nume",
+            "handle": "Descriere",
+            "name": "Nume",
+            "user": "Utilizator"
         }
     }
 }

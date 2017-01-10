@@ -2,8 +2,8 @@
     "rebuApp": {
         "training" : {
             "home": {
-                "title": "Trainings",
-                "createLabel": "Crează o nouă Training",
+                "title": "Antrenamente",
+                "createLabel": "Crează un nou antrenament",
                 "createOrEditLabel": "Crează sau editează o Training",
                 "search": "Search for Training"
             },
@@ -16,9 +16,9 @@
             "detail": {
                 "title": "Training"
             },
-            "name": "Name",
-            "name": "Name",
-            "user": "User"
+            "name": "Nume",
+            "name": "Nume",
+            "user": "Utilizator"
         }
     }
 }

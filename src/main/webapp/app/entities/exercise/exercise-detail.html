@@ -22,9 +22,9 @@
         </dd>
         <dt><span data-translate="rebuApp.exercise.training">Training</span></dt>
         <dd>
-            <a ui-sref="training-detail({id:vm.exercise.training.id})">{{vm.exercise.training.id}}</a>
+            <a ui-sref="training-detail({id:vm.exercise.training.id})">{{vm.exercise.training.name}}</a>
         </dd>
-        <dt><span data-translate="rebuApp.exercise.name">Name</span></dt>
+        <!--<dt><span data-translate="rebuApp.exercise.name">Name</span></dt> -->
         <dd>
             <span ng-repeat="name in vm.exercise.names">
                 <a ui-sref="result-detail({id: name.id})">{{name.id}}</a>{{$last ? '' : ', '}}

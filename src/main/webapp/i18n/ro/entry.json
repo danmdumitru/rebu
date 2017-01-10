@@ -2,8 +2,8 @@
     "rebuApp": {
         "entry" : {
             "home": {
-                "title": "Entries",
-                "createLabel": "Crează o nouă Entry",
+                "title": "Entries - Blog",
+                "createLabel": "Crează o noua postare",
                 "createOrEditLabel": "Crează sau editează o Entry",
                 "search": "Search for Entry"
             },
@@ -16,11 +16,11 @@
             "detail": {
                 "title": "Entry"
             },
-            "title": "Title",
-            "content": "Content",
-            "date": "Date",
+            "title": "Titlu",
+            "content": "Continut",
+            "date": "Data",
             "blog": "Blog",
-            "title": "Title"
+            "title": "Titlu"
         }
     }
 }

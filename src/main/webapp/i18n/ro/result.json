@@ -2,8 +2,8 @@
     "rebuApp": {
         "result" : {
             "home": {
-                "title": "Results",
-                "createLabel": "Crează o nouă Result",
+                "title": "Rezultate Antrenament",
+                "createLabel": "Crează un nou Rezultat",
                 "createOrEditLabel": "Crează sau editează o Result",
                 "search": "Search for Result"
             },
@@ -16,10 +16,10 @@
             "detail": {
                 "title": "Result"
             },
-            "description": "Description",
-            "rep": "Rep",
-            "sets": "Sets",
-            "dueDate": "Due Date"
+            "description": "Descriere",
+            "rep": "Repetari",
+            "sets": "Seturi",
+            "dueDate": "Data efectuata"
         }
     }
 }

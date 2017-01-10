@@ -16,10 +16,10 @@
             "detail": {
                 "title": "Blog"
             },
-            "name": "Name",
-            "handle": "Handle",
-            "name": "Name",
-            "user": "User"
+            "name": "Nom",
+            "handle": "Description",
+            "name": "Nom",
+            "user": "Utilisateur"
         }
     }
 }

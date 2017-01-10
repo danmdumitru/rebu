@@ -2,7 +2,7 @@
     "rebuApp": {
         "entry" : {
             "home": {
-                "title": "Entries",
+                "title": "Entries - Blog",
                 "createLabel": "Create a new Entry",
                 "createOrEditLabel": "Create or edit a Entry",
                 "search": "Search for Entry"
