@@ -1,0 +1,107 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "unit_id",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "latitude",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "longitude",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "altitude",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "speed",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "country",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "versionsw",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "versionhw",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mobile",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "detector",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "factor",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "temperature",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cmp",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "duty",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "time",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "voltage",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pressure",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "humidity",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "luminosity",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "co2",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "ch2o",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "pm_25",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "changelogDate": "20170608112802",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "urad_monitor",
+    "pagination": "infinite-scroll"
+}

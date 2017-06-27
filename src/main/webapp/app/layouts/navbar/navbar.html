@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand logo" href="#/" ng-click="vm.collapseNavbar()">
-                <span data-translate="global.title">Rebu</span> <span class="navbar-version">v{{VERSION}}</span>
+                <span data-translate="global.title">Forecast uRADM devices</span> <span class="navbar-version">v{{VERSION}}</span>
             </a>
         </div>
         <div class="navbar-collapse" uib-collapse="vm.isNavbarCollapsed" ng-switch="vm.isAuthenticated()">
@@ -31,42 +31,48 @@
                         </span>
                     </a>
                     <ul class="dropdown-menu" uib-dropdown-menu>
+<!--                         <li ui-sref-active="active"> -->
+<!--                             <a ui-sref="blog" ng-click="vm.collapseNavbar()"> -->
+<!--                                 <span class="glyphicon glyphicon-asterisk"></span>&nbsp; -->
+<!--                                 <span data-translate="global.menu.entities.blog">Blog</span> -->
+<!--                             </a> -->
+<!--                         </li> -->
+<!--                         <li ui-sref-active="active"> -->
+<!--                             <a ui-sref="tag" ng-click="vm.collapseNavbar()"> -->
+<!--                                 <span class="glyphicon glyphicon-asterisk"></span>&nbsp; -->
+<!--                                 <span data-translate="global.menu.entities.tag">Tag</span> -->
+<!--                             </a> -->
+<!--                         </li> -->
+<!--                         <li ui-sref-active="active"> -->
+<!--                             <a ui-sref="entry" ng-click="vm.collapseNavbar()"> -->
+<!--                                 <span class="glyphicon glyphicon-asterisk"></span>&nbsp; -->
+<!--                                 <span data-translate="global.menu.entities.entry">Entry</span> -->
+<!--                             </a> -->
+<!--                         </li> -->
+<!--                         <li ui-sref-active="active"> -->
+<!--                             <a ui-sref="training" ng-click="vm.collapseNavbar()"> -->
+<!--                                 <span class="glyphicon glyphicon-asterisk"></span>&nbsp; -->
+<!--                                 <span data-translate="global.menu.entities.training">Training</span> -->
+<!--                             </a> -->
+<!--                         </li> -->
+<!--                         <li ui-sref-active="active"> -->
+<!--                             <a ui-sref="exercise" ng-click="vm.collapseNavbar()"> -->
+<!--                                 <span class="glyphicon glyphicon-asterisk"></span>&nbsp; -->
+<!--                                 <span data-translate="global.menu.entities.exercise">Exercise</span> -->
+<!--                             </a> -->
+<!--                         </li> -->
+<!--                         <li ui-sref-active="active"> -->
+<!--                             <a ui-sref="result" ng-click="vm.collapseNavbar()"> -->
+<!--                                 <span class="glyphicon glyphicon-asterisk"></span>&nbsp; -->
+<!--                                 <span data-translate="global.menu.entities.result">Result</span> -->
+<!--                             </a> -->
+<!--                         </li> -->
                         <li ui-sref-active="active">
-                            <a ui-sref="blog" ng-click="vm.collapseNavbar()">
-                                <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
-                                <span data-translate="global.menu.entities.blog">Blog</span>
-                            </a>
-                        </li>
-                        <li ui-sref-active="active">
-                            <a ui-sref="tag" ng-click="vm.collapseNavbar()">
-                                <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
-                                <span data-translate="global.menu.entities.tag">Tag</span>
-                            </a>
-                        </li>
-                        <li ui-sref-active="active">
-                            <a ui-sref="entry" ng-click="vm.collapseNavbar()">
-                                <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
-                                <span data-translate="global.menu.entities.entry">Entry</span>
-                            </a>
-                        </li>
-                        <li ui-sref-active="active">
-                            <a ui-sref="training" ng-click="vm.collapseNavbar()">
-                                <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
-                                <span data-translate="global.menu.entities.training">Training</span>
-                            </a>
-                        </li>
-                        <li ui-sref-active="active">
-                            <a ui-sref="exercise" ng-click="vm.collapseNavbar()">
-                                <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
-                                <span data-translate="global.menu.entities.exercise">Exercise</span>
-                            </a>
-                        </li>
-                        <li ui-sref-active="active">
-                            <a ui-sref="result" ng-click="vm.collapseNavbar()">
-                                <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
-                                <span data-translate="global.menu.entities.result">Result</span>
-                            </a>
-                        </li>
+                                <a ui-sref="urad-monitor" ng-click="vm.collapseNavbar()">
+                                    <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
+                                    <span data-translate="global.menu.entities.uradMonitor">Urad Monitor</span>
+                                </a>
+                            </li>
                         <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
                     </ul>
                 </li>

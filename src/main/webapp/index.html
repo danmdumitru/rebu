@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>rebu</title>
+    <title>uradm forecast</title>
     <meta name="description" content="">
     <meta name="google" value="notranslate">
     <meta name="viewport" content="width=device-width">
@@ -16,7 +16,17 @@
     <!-- endbuild -->
     <!-- build:css content/css/main.css -->
     <link rel="stylesheet" href="content/css/main.css">
+    <link rel="stylesheet" href="urad/css/style.css">
     <!-- endbuild -->
+    
+    <!-- uradmonitor -->
+    
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href='//cdnjs.cloudflare.com/ajax/libs/ol3/3.8.2/ol.css' rel="stylesheet" type='text/css'>
+	 <!-- enduradmonitor -->
+
 </head>
 <body ng-app="rebuApp" ng-strict-di>
     <!--[if lt IE 9]>
@@ -29,7 +39,7 @@
         </div>
 
         <div class="footer" ng-cloak>
-            <p class="pull-right" >Copyright © Rebu 2016</p>
+            <p class="pull-right" >Copyright © Dan Dumitru 2017</p>
         </div>
     </div>
 
@@ -44,6 +54,11 @@
     </script>-->
 
     <!-- build:js app/vendor.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.8.2/ol.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.1/dygraph-combined.js"></script>
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/messageformat/messageformat.js"></script>
@@ -66,6 +81,8 @@
     <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.js"></script>
     <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
     <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/restangular/1.5.1/restangular.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/restangular/1.5.1/restangular.min.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
 
@@ -92,6 +109,12 @@
     <script src="app/layouts/error/error.state.js"></script>
     <script src="app/home/home.state.js"></script>
     <script src="app/home/home.controller.js"></script>
+    <script src="app/entities/urad-monitor/urad-monitor-dialog.controller.js"></script>
+    <script src="app/entities/urad-monitor/urad-monitor-detail.controller.js"></script>
+    <script src="app/entities/urad-monitor/urad-monitor-delete-dialog.controller.js"></script>
+    <script src="app/entities/urad-monitor/urad-monitor.state.js"></script>
+    <script src="app/entities/urad-monitor/urad-monitor.service.js"></script>
+    <script src="app/entities/urad-monitor/urad-monitor.controller.js"></script>
     <script src="app/entities/training/training-dialog.controller.js"></script>
     <script src="app/entities/training/training-detail.controller.js"></script>
     <script src="app/entities/training/training-delete-dialog.controller.js"></script>

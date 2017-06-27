@@ -1,0 +1,9 @@
+#map-container {
+	overflow: hidden; 	
+	/* position: fixed; OL doesn't like this */
+	z-index: 2;  /* change to -1 to have the section div above this and make scrolling easier: catch clicks and change CSS dynamically */
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+}
+

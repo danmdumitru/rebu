@@ -1,0 +1,115 @@
+
+<div>
+    <h2><span data-translate="rebuApp.uradMonitor.detail.title">Urad Monitor</span> {{vm.uradMonitor.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="rebuApp.uradMonitor.unit_id">Unit Id</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.unit_id}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.latitude">Latitude</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.latitude}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.longitude">Longitude</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.longitude}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.altitude">Altitude</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.altitude}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.speed">Speed</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.speed}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.city">City</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.city}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.country">Country</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.country}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.versionsw">Versionsw</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.versionsw}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.versionhw">Versionhw</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.versionhw}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.status">Status</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.status}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.mobile">Mobile</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.mobile}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.detector">Detector</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.detector}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.factor">Factor</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.factor}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.temperature">Temperature</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.temperature}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.cmp">Cmp</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.cmp}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.duty">Duty</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.duty}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.time">Time</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.time | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.voltage">Voltage</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.voltage}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.pressure">Pressure</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.pressure}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.humidity">Humidity</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.humidity}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.luminosity">Luminosity</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.luminosity}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.co2">Co 2</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.co2}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.ch2o">Ch 2 O</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.ch2o}}</span>
+        </dd>
+        <dt><span data-translate="rebuApp.uradMonitor.pm_25">Pm 25</span></dt>
+        <dd>
+            <span>{{vm.uradMonitor.pm_25}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="urad-monitor-detail.edit({id:vm.uradMonitor.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

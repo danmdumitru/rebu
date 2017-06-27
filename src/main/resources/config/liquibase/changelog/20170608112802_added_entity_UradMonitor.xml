@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <!--
+        Added the entity UradMonitor.
+    -->
+    <changeSet id="20170608112802-1" author="jhipster">
+        <createTable tableName="urad_monitor">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="unit_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="latitude" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="longitude" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="altitude" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="speed" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="city" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="country" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="versionsw" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="versionhw" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="mobile" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="detector" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="factor" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="temperature" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="cmp" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="duty" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="jhi_time" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="voltage" type="double">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="pressure" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="humidity" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="luminosity" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="co_2" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="ch_2_o" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="pm_25" type="decimal(10,2)">
+                <constraints nullable="true" />
+            </column>
+
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+        <dropDefaultValue tableName="urad_monitor" columnName="jhi_time" columnDataType="datetime"/>
+        
+    </changeSet>
+</databaseChangeLog>

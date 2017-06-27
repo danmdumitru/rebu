@@ -1,43 +1,44 @@
 {
     "global": {
-        "title": "Rebu",
-        "browsehappy": "Folosiți un browser <strong>vechi</strong> . Va rugăm <a href=\"http://browsehappy.com/?locale=en\"> să îl upgradați</a> pentru o experiența îmbunătațită.",
+        "title": "Predictie pe dispozitive uRADMonitor",
+        "browsehappy": "FolosiÈ›i un browser <strong>vechi</strong> . Va rugÄƒm <a href=\"http://browsehappy.com/?locale=en\"> sÄƒ Ã®l upgradaÈ›i</a> pentru o experienÈ›a Ã®mbunÄƒtaÈ›itÄƒ.",
         "menu": {
-            "home": "Acasă",
+            "home": "AcasÄƒ",
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
-                "main": "Entitați",
+                "main": "EntitaÈ›i",
                 "bankAccount": "ContBancar",
-                "label": "Etichetă",
-                "operation": "Operație",
+                "label": "EtichetÄƒ",
+                "operation": "OperaÈ›ie",
                 "blog": "Blog",
                 "tag": "Tag",
                 "entry": "Entry",
                 "training": "Training",
                 "exercise": "Exercise",
                 "result": "Result",
+                "uradMonitor": "Urad Monitor",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
                 "main": "Cont",
-                "settings": "Setări",
-                "password": "Parolă",
+                "settings": "SetÄƒri",
+                "password": "ParolÄƒ",
                 "sessions": "Sesiuni",
                 "login": "Autentificare",
                 "logout": "Iesire",
-                "register": "Înregistrare"
+                "register": "ÃŽnregistrare"
             },
             "admin": {
                 "main": "Administrare",
                 "userManagement": "User management",
-                "tracker": "Informații utilizatori",
+                "tracker": "InformaÈ›ii utilizatori",
                 "metrics": "Metrici",
                 "health": "Stare",
                 "configuration": "Configurare",
                 "logs": "Jurnal",
                 "audits": "Audit",
                 "apidocs": "API",
-                "database": "Bază de date",
+                "database": "BazÄƒ de date",
                 "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)"
             },
             "services":{
@@ -46,43 +47,43 @@
             "articles":{
                 "main": "Articole"
             },
-            "language": "Limbă"
+            "language": "LimbÄƒ"
         },
         "form": {
             "username": "Utilizator",
             "username.placeholder": "Numele de utilizator",
-            "newpassword": "Parolă noua",
-            "newpassword.placeholder": "Parolă noua",
-            "confirmpassword": "Confirma parolă",
-            "confirmpassword.placeholder": "Confirmați noua parolă",
+            "newpassword": "ParolÄƒ noua",
+            "newpassword.placeholder": "ParolÄƒ noua",
+            "confirmpassword": "Confirma parolÄƒ",
+            "confirmpassword.placeholder": "ConfirmaÈ›i noua parolÄƒ",
             "email": "E-mail",
-            "email.placeholder": "E-mailul dumneavoastră"
+            "email.placeholder": "E-mailul dumneavoastrÄƒ"
         },
         "messages": {
             "info": {
-                "authenticated": "Dacă doriți să vă <a class=\"alert-link\" href=\"\" ng-click=\"vm.login()\">autentificați</a>, puteți încerca conturile implicite:<br/>- Administrator (login=\"admin\" si parola=\"admin\") <br/>- Utilizator (login=\"user\" si parola=\"user\").",
-                "register": "Înca nu aveți un cont? <a class=\"alert-link\" href=\"\" ng-click=\"vm.register()\">Înregistrați un nou cont</a>"
+                "authenticated": "DacÄƒ doriÈ›i sÄƒ vÄƒ <a class=\"alert-link\" href=\"\" ng-click=\"vm.login()\">autentificaÈ›i</a>, puteÈ›i Ã®ncerca conturile implicite:<br/>- Administrator (login=\"admin\" si parola=\"admin\") <br/>- Utilizator (login=\"user\" si parola=\"user\").",
+                "register": "ÃŽnca nu aveÈ›i un cont? <a class=\"alert-link\" href=\"\" ng-click=\"vm.register()\">ÃŽnregistraÈ›i un nou cont</a>"
             },
             "error": {
                 "dontmatch" : "Parola si confirmarea ei nu corespund!"
             },
             "validate": {
                 "newpassword": {
-                    "required": "Parola dumneavoastră este necesara.",
-                    "minlength": "Parola dumneavoastră trebuie să aibă cel puțin 5 caractere.",
-                    "maxlength": "Parola dumneavoastră poate avea maxim 50 de caractere",
+                    "required": "Parola dumneavoastrÄƒ este necesara.",
+                    "minlength": "Parola dumneavoastrÄƒ trebuie sÄƒ aibÄƒ cel puÈ›in 5 caractere.",
+                    "maxlength": "Parola dumneavoastrÄƒ poate avea maxim 50 de caractere",
                     "strength": "Puterea parolei:"
                 },
                 "confirmpassword": {
-                    "required": "Confirmarea parolei este necesară.",
-                    "minlength": "Confirmarea parolei trebuie să aibă cel puțin 5 caractere.",
+                    "required": "Confirmarea parolei este necesarÄƒ.",
+                    "minlength": "Confirmarea parolei trebuie sÄƒ aibÄƒ cel puÈ›in 5 caractere.",
                     "maxlength": "Confirmarea parolei poate avea maxim 50 de caractere."
                 },
                 "email": {
-                    "required": "E-mailul dumneavoastră este necesar.",
+                    "required": "E-mailul dumneavoastrÄƒ este necesar.",
                     "invalid": "E-mail invalid",
-                    "minlength": "E-mailul dumneavoastră trebuie să aibă cel puțin 5 caractere",
-                    "maxlength": "E-mailul dumneavoastră nu poate avea mai mult de 50 de caractere."
+                    "minlength": "E-mailul dumneavoastrÄƒ trebuie sÄƒ aibÄƒ cel puÈ›in 5 caractere",
+                    "maxlength": "E-mailul dumneavoastrÄƒ nu poate avea mai mult de 50 de caractere."
                 }
             }
         },
@@ -97,42 +98,42 @@
         "action": {
             "addblob": "Add blob",
             "addimage": "Add image",
-            "back": "Înapoi",
-            "cancel": "Anulează",
-            "delete": "Șterge",
-            "edit": "Editează",
+            "back": "ÃŽnapoi",
+            "cancel": "AnuleazÄƒ",
+            "delete": "È˜terge",
+            "edit": "EditeazÄƒ",
             "open": "Open",
-            "save": "Salvează",
-            "view": "Vizualizează"
+            "save": "SalveazÄƒ",
+            "view": "VizualizeazÄƒ"
         },
         "detail": {
-            "field": "Câmp",
+            "field": "CÃ¢mp",
             "value": "Valoare"
         },
         "delete": {
-            "title": "Confirmați operația de ștergere"
+            "title": "ConfirmaÈ›i operaÈ›ia de È™tergere"
         },
         "validation": {
-            "required": "Acest câmp este necesar.",
-            "minlength": "Acest câmp este necesar să aibă minimum {{min}} caractere.",
-            "maxlength": "Acest câmp nu poate să fie mai lung decât {{max}} caractere.",
-            "min": "Acest câmp trebuie să fie mai mult decât {{min}}.",
-            "max": "Acest câmp nu poate să fie mai mult decât {{max}}.",
-            "minbytes": "Acest câmp nu poate să fie mai mic decât {{min}} bytes.",
-            "maxbytes": "Acest câmp nu poate să fie mai mare decât {{max}} bytes.",
-            "pattern": "Acest câmp trebuie să corespundă șablonului {{pattern}}.",
-            "number": "Acest câmp trebuie să fie numeric.",
-            "datetimelocal": "Acest câmp trebuie să conțină data si ora."
+            "required": "Acest cÃ¢mp este necesar.",
+            "minlength": "Acest cÃ¢mp este necesar sÄƒ aibÄƒ minimum {{min}} caractere.",
+            "maxlength": "Acest cÃ¢mp nu poate sÄƒ fie mai lung decÃ¢t {{max}} caractere.",
+            "min": "Acest cÃ¢mp trebuie sÄƒ fie mai mult decÃ¢t {{min}}.",
+            "max": "Acest cÃ¢mp nu poate sÄƒ fie mai mult decÃ¢t {{max}}.",
+            "minbytes": "Acest cÃ¢mp nu poate sÄƒ fie mai mic decÃ¢t {{min}} bytes.",
+            "maxbytes": "Acest cÃ¢mp nu poate sÄƒ fie mai mare decÃ¢t {{max}} bytes.",
+            "pattern": "Acest cÃ¢mp trebuie sÄƒ corespundÄƒ È™ablonului {{pattern}}.",
+            "number": "Acest cÃ¢mp trebuie sÄƒ fie numeric.",
+            "datetimelocal": "Acest cÃ¢mp trebuie sÄƒ conÈ›inÄƒ data si ora."
         }
     },
     "error": {
         "server.not.reachable": "Serverul este indisponibil",
         "url.not.found": "Not found",
-        "NotNull": "Câmpul {{fieldName}} nu poate fi gol!",
-        "Size": "Câmpul {{fieldName}} nu corespunde ceințelor de dimensiune minimă/maximă!",
+        "NotNull": "CÃ¢mpul {{fieldName}} nu poate fi gol!",
+        "Size": "CÃ¢mpul {{fieldName}} nu corespunde ceinÈ›elor de dimensiune minimÄƒ/maximÄƒ!",
         "userexists": "Login name already used!",
         "emailexists": "E-mail is already in use!",
         "idexists": "A new {{entityName}} cannot already have an ID"
     },
-    "footer": "Acesta este subsolul paginii dumneavoastră"
+    "footer": "Acesta este subsolul paginii dumneavoastrÄƒ"
 }

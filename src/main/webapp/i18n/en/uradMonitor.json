@@ -1,0 +1,44 @@
+{
+    "rebuApp": {
+        "uradMonitor" : {
+            "home": {
+                "title": "Urad Monitors",
+                "createLabel": "Create a new Urad Monitor",
+                "createOrEditLabel": "Create or edit a Urad Monitor"
+            },
+            "created": "A new Urad Monitor is created with identifier {{ param }}",
+            "updated": "A Urad Monitor is updated with identifier {{ param }}",
+            "deleted": "A Urad Monitor is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Urad Monitor {{ id }}?"
+            },
+            "detail": {
+                "title": "Urad Monitor"
+            },
+            "unit_id": "Unit Id",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "altitude": "Altitude",
+            "speed": "Speed",
+            "city": "City",
+            "country": "Country",
+            "versionsw": "Versionsw",
+            "versionhw": "Versionhw",
+            "status": "Status",
+            "mobile": "Mobile",
+            "detector": "Detector",
+            "factor": "Factor",
+            "temperature": "Temperature",
+            "cmp": "Cmp",
+            "duty": "Duty",
+            "time": "Time",
+            "voltage": "Voltage",
+            "pressure": "Pressure",
+            "humidity": "Humidity",
+            "luminosity": "Luminosity",
+            "co2": "Co 2",
+            "ch2o": "Ch 2 O",
+            "pm_25": "Pm 25"
+        }
+    }
+}

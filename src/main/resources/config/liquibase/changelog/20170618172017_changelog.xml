@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="DumitruD (generated)" id="1497795632398-1">
+        <createTable tableName="urad">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="urad_monitorPK"/>
+            </column>
+            <column name="altitude" type="VARCHAR(255)"/>
+            <column name="ch_2_o" type="DECIMAL(10, 2)"/>
+            <column name="city" type="VARCHAR(255)"/>
+            <column name="cmp" type="VARCHAR(255)"/>
+            <column name="co_2" type="DECIMAL(10, 2)"/>
+            <column name="country" type="VARCHAR(255)"/>
+            <column name="detector" type="VARCHAR(255)"/>
+            <column name="duty" type="VARCHAR(255)"/>
+            <column name="factor" type="DECIMAL(10, 2)"/>
+            <column name="humidity" type="DECIMAL(10, 2)"/>
+            <column name="latitude" type="VARCHAR(255)"/>
+            <column name="longitude" type="VARCHAR(255)"/>
+            <column name="luminosity" type="DECIMAL(10, 2)"/>
+            <column name="mobile" type="VARCHAR(255)"/>
+            <column name="pm_25" type="DECIMAL(10, 2)"/>
+            <column name="pressure" type="DECIMAL(10, 2)"/>
+            <column name="speed" type="VARCHAR(255)"/>
+            <column name="status" type="VARCHAR(255)"/>
+            <column name="temperature" type="VARCHAR(255)"/>
+            <column name="jhi_time" type="datetime"/>
+            <column name="unit_id" type="VARCHAR(255)"/>
+            <column name="versionhw" type="BIGINT"/>
+            <column name="versionsw" type="BIGINT"/>
+            <column name="voltage" type="DOUBLE precision"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="DumitruD (generated)" id="1497795632398-2">
+        <dropUniqueConstraint constraintName="user_id" tableName="jhi_social_user_connection"/>
+    </changeSet>
+    <changeSet author="DumitruD (generated)" id="1497795632398-3">
+        <dropUniqueConstraint constraintName="user_id_2" tableName="jhi_social_user_connection"/>
+    </changeSet>
+</databaseChangeLog>

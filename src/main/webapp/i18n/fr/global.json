@@ -1,6 +1,6 @@
 {
     "global": {
-        "title": "Rebu",
+        "title": "Forecast uRADMonitor devices",
         "browsehappy": "Vous utilisez un <strong>ancien</strong> navigateur. Veuillez <a href=\"http://browsehappy.com/?locale=fr\">mettre à jour votre navigateur</a> pour une meilleure expérience.",
         "menu": {
             "home": "Accueil",
@@ -13,6 +13,7 @@
                 "training": "Training",
                 "exercise": "Exercise",
                 "result": "Result",
+                "uradMonitor": "Urad Monitor",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

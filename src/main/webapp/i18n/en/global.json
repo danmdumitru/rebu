@@ -1,6 +1,6 @@
 {
     "global": {
-        "title": "Rebu",
+        "title": "Forecast uRADMonitor devices",
         "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
         "menu": {
             "home": "Home",
@@ -13,6 +13,7 @@
                 "training": "Training",
                 "exercise": "Exercise",
                 "result": "Result",
+                "uradMonitor": "Urad Monitor",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
@@ -125,5 +126,5 @@
         "emailexists": "E-mail is already in use!",
         "idexists": "A new {{ entityName }} cannot already have an ID"
     },
-    "footer": "Copyright � Rebu 2016"
+    "footer": "Copyright � Dan Dumitru 2017"
 }

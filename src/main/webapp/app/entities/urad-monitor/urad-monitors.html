@@ -1,0 +1,102 @@
+<div>
+    <h2 data-translate="rebuApp.uradMonitor.home.title">Urad Monitors</h2>
+    <jhi-alert></jhi-alert>
+<!--     <div class="container-fluid"> -->
+<!--         <div class="row"> -->
+<!--             <div class="col-xs-4 no-padding-left"> -->
+<!--                 <button class="btn btn-primary" ui-sref="urad-monitor.new" > -->
+<!--                     <span class="glyphicon glyphicon-plus"></span> -->
+<!--                     <span  data-translate="rebuApp.uradMonitor.home.createLabel"> -->
+<!--                         Create new Urad Monitor -->
+<!--                     </span> -->
+<!--                 </button> -->
+<!--             </div> -->
+<!--         </div> -->
+<!--     </div> -->
+<!--     <br/> -->
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.reset()">
+                    <th jh-sort-by="id"><span data-translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="unit_id"><span data-translate="rebuApp.uradMonitor.unit_id">Unit Id</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="latitude"><span data-translate="rebuApp.uradMonitor.latitude">Latitude</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="longitude"><span data-translate="rebuApp.uradMonitor.longitude">Longitude</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="altitude"><span data-translate="rebuApp.uradMonitor.altitude">Altitude</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="speed"><span data-translate="rebuApp.uradMonitor.speed">Speed</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="city"><span data-translate="rebuApp.uradMonitor.city">City</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="country"><span data-translate="rebuApp.uradMonitor.country">Country</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="versionsw"><span data-translate="rebuApp.uradMonitor.versionsw">Versionsw</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="versionhw"><span data-translate="rebuApp.uradMonitor.versionhw">Versionhw</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="status"><span data-translate="rebuApp.uradMonitor.status">Status</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="mobile"><span data-translate="rebuApp.uradMonitor.mobile">Mobile</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="detector"><span data-translate="rebuApp.uradMonitor.detector">Detector</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="factor"><span data-translate="rebuApp.uradMonitor.factor">Factor</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="temperature"><span data-translate="rebuApp.uradMonitor.temperature">Temperature</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="cmp"><span data-translate="rebuApp.uradMonitor.cmp">Cmp</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="duty"><span data-translate="rebuApp.uradMonitor.duty">Duty</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="time"><span data-translate="rebuApp.uradMonitor.time">Time</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="voltage"><span data-translate="rebuApp.uradMonitor.voltage">Voltage</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="pressure"><span data-translate="rebuApp.uradMonitor.pressure">Pressure</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="humidity"><span data-translate="rebuApp.uradMonitor.humidity">Humidity</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="luminosity"><span data-translate="rebuApp.uradMonitor.luminosity">Luminosity</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="co2"><span data-translate="rebuApp.uradMonitor.co2">Co 2</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="ch2o"><span data-translate="rebuApp.uradMonitor.ch2o">Ch 2 O</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="pm_25"><span data-translate="rebuApp.uradMonitor.pm_25">Pm 25</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody infinite-scroll="vm.loadPage(vm.page + 1)" infinite-scroll-disabled="vm.page >= vm.links['last']">
+                <tr ng-repeat="uradMonitor in vm.uradMonitors track by uradMonitor.id">
+                    <td><a ui-sref="urad-monitor-detail({id:uradMonitor.id})">{{uradMonitor.id}}</a></td>
+                    <td>{{uradMonitor.unit_id}}</td>
+                    <td>{{uradMonitor.latitude}}</td>
+                    <td>{{uradMonitor.longitude}}</td>
+                    <td>{{uradMonitor.altitude}}</td>
+                    <td>{{uradMonitor.speed}}</td>
+                    <td>{{uradMonitor.city}}</td>
+                    <td>{{uradMonitor.country}}</td>
+                    <td>{{uradMonitor.versionsw}}</td>
+                    <td>{{uradMonitor.versionhw}}</td>
+                    <td>{{uradMonitor.status}}</td>
+                    <td>{{uradMonitor.mobile}}</td>
+                    <td>{{uradMonitor.detector}}</td>
+                    <td>{{uradMonitor.factor}}</td>
+                    <td>{{uradMonitor.temperature}}</td>
+                    <td>{{uradMonitor.cmp}}</td>
+                    <td>{{uradMonitor.duty}}</td>
+                    <td>{{uradMonitor.time | date:'medium'}}</td>
+                    <td>{{uradMonitor.voltage}}</td>
+                    <td>{{uradMonitor.pressure}}</td>
+                    <td>{{uradMonitor.humidity}}</td>
+                    <td>{{uradMonitor.luminosity}}</td>
+                    <td>{{uradMonitor.co2}}</td>
+                    <td>{{uradMonitor.ch2o}}</td>
+                    <td>{{uradMonitor.pm_25}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="urad-monitor-detail({id:uradMonitor.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="urad-monitor.edit({id:uradMonitor.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="urad-monitor.delete({id:uradMonitor.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

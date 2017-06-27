@@ -1,0 +1,44 @@
+{
+    "rebuApp": {
+        "uradMonitor" : {
+            "home": {
+                "title": "Urad Monitors",
+                "createLabel": "Crează o nouă Urad Monitor",
+                "createOrEditLabel": "Crează sau editează o Urad Monitor"
+            },
+            "created": "O nouă Urad Monitor este creată cu identificatorul {{ param }}",
+            "updated": "O Urad Monitor este editată cu identificatorul {{ param }}",
+            "deleted": "O Urad Monitor este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Urad Monitor {{ id }}?"
+            },
+            "detail": {
+                "title": "Urad Monitor"
+            },
+            "unit_id": "Unit Id",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "altitude": "Altitude",
+            "speed": "Speed",
+            "city": "City",
+            "country": "Country",
+            "versionsw": "Versionsw",
+            "versionhw": "Versionhw",
+            "status": "Status",
+            "mobile": "Mobile",
+            "detector": "Detector",
+            "factor": "Factor",
+            "temperature": "Temperature",
+            "cmp": "Cmp",
+            "duty": "Duty",
+            "time": "Time",
+            "voltage": "Voltage",
+            "pressure": "Pressure",
+            "humidity": "Humidity",
+            "luminosity": "Luminosity",
+            "co2": "Co 2",
+            "ch2o": "Ch 2 O",
+            "pm_25": "Pm 25"
+        }
+    }
+}

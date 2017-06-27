@@ -1,0 +1,174 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myUradMonitorLabel" data-translate="rebuApp.uradMonitor.home.createOrEditLabel">Create or edit a Urad Monitor</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.uradMonitor.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.uradMonitor.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.unit_id" for="field_unit_id">Unit Id</label>
+            <input type="text" class="form-control" name="unit_id" id="field_unit_id"
+                    ng-model="vm.uradMonitor.unit_id"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.latitude" for="field_latitude">Latitude</label>
+            <input type="text" class="form-control" name="latitude" id="field_latitude"
+                    ng-model="vm.uradMonitor.latitude"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.longitude" for="field_longitude">Longitude</label>
+            <input type="text" class="form-control" name="longitude" id="field_longitude"
+                    ng-model="vm.uradMonitor.longitude"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.altitude" for="field_altitude">Altitude</label>
+            <input type="text" class="form-control" name="altitude" id="field_altitude"
+                    ng-model="vm.uradMonitor.altitude"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.speed" for="field_speed">Speed</label>
+            <input type="text" class="form-control" name="speed" id="field_speed"
+                    ng-model="vm.uradMonitor.speed"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.city" for="field_city">City</label>
+            <input type="text" class="form-control" name="city" id="field_city"
+                    ng-model="vm.uradMonitor.city"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.country" for="field_country">Country</label>
+            <input type="text" class="form-control" name="country" id="field_country"
+                    ng-model="vm.uradMonitor.country"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.versionsw" for="field_versionsw">Versionsw</label>
+            <input type="number" class="form-control" name="versionsw" id="field_versionsw"
+                    ng-model="vm.uradMonitor.versionsw"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.versionhw" for="field_versionhw">Versionhw</label>
+            <input type="number" class="form-control" name="versionhw" id="field_versionhw"
+                    ng-model="vm.uradMonitor.versionhw"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.status" for="field_status">Status</label>
+            <input type="text" class="form-control" name="status" id="field_status"
+                    ng-model="vm.uradMonitor.status"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.mobile" for="field_mobile">Mobile</label>
+            <input type="text" class="form-control" name="mobile" id="field_mobile"
+                    ng-model="vm.uradMonitor.mobile"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.detector" for="field_detector">Detector</label>
+            <input type="text" class="form-control" name="detector" id="field_detector"
+                    ng-model="vm.uradMonitor.detector"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.factor" for="field_factor">Factor</label>
+            <input type="number" class="form-control" name="factor" id="field_factor"
+                    ng-model="vm.uradMonitor.factor"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.temperature" for="field_temperature">Temperature</label>
+            <input type="text" class="form-control" name="temperature" id="field_temperature"
+                    ng-model="vm.uradMonitor.temperature"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.cmp" for="field_cmp">Cmp</label>
+            <input type="text" class="form-control" name="cmp" id="field_cmp"
+                    ng-model="vm.uradMonitor.cmp"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.duty" for="field_duty">Duty</label>
+            <input type="text" class="form-control" name="duty" id="field_duty"
+                    ng-model="vm.uradMonitor.duty"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.time" for="field_time">Time</label>
+                <div class="input-group">
+                    <input id="field_time" type="text" class="form-control" name="time" datetime-picker="{{dateformat}}" ng-model="vm.uradMonitor.time" is-open="vm.datePickerOpenStatus.time"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('time')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.voltage" for="field_voltage">Voltage</label>
+            <input type="number" class="form-control" name="voltage" id="field_voltage"
+                    ng-model="vm.uradMonitor.voltage"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.pressure" for="field_pressure">Pressure</label>
+            <input type="number" class="form-control" name="pressure" id="field_pressure"
+                    ng-model="vm.uradMonitor.pressure"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.humidity" for="field_humidity">Humidity</label>
+            <input type="number" class="form-control" name="humidity" id="field_humidity"
+                    ng-model="vm.uradMonitor.humidity"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.luminosity" for="field_luminosity">Luminosity</label>
+            <input type="number" class="form-control" name="luminosity" id="field_luminosity"
+                    ng-model="vm.uradMonitor.luminosity"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.co2" for="field_co2">Co 2</label>
+            <input type="number" class="form-control" name="co2" id="field_co2"
+                    ng-model="vm.uradMonitor.co2"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.ch2o" for="field_ch2o">Ch 2 O</label>
+            <input type="number" class="form-control" name="ch2o" id="field_ch2o"
+                    ng-model="vm.uradMonitor.ch2o"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="rebuApp.uradMonitor.pm_25" for="field_pm_25">Pm 25</label>
+            <input type="number" class="form-control" name="pm_25" id="field_pm_25"
+                    ng-model="vm.uradMonitor.pm_25"
+                    />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
